@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**********************以上是CSS RESET********************/
+
+body{
+    color:#3F5D45;
+
+}
+a{text-decoration:none; color: #3F5D45;}
+li{list-style:none;}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-primary {
+    background-color: #3F5D45;
+    color: #FFF;
+}
+
+.bg-secondary {
+    background-color: #EAF0ED;
+}
+
+.border-light {
+    border: 1px solid #EAF0ED;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.fix-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 30px 0px;
+    background-color: #FFF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 10px 30px 10px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    background-color: #3F5D45;
+    color:#FFF;
+}
+
+.content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.menu {
+    width: 300px;
+    font-weight: bold;
+}
+
+.menu-item {
+    display: block;
+    padding: 16px 0px;
+    text-align: center;
+    border: 1px solid #EAF0ED;
+    border-top:0;
+}
+
+.menu-title{
+    border:0;
+}
+
+.menu li a:hover {
+    background-color: #EAF0ED;
+}
+
+.product-list {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.card-item {
+    position: relative;
+}
+
+.item-img {
+    width: 300px;
+    height: 315px;
+}
+
+.item-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-item .tag {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 16px 10px;
+}
+
+.card-item .heart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.item-content {
+    display: flex;
+    color: #3F5D45;
+}
+
+.item-content .title {
+    width: 173px;
+    padding: 14px 0px;
+    text-align: center;
+    border-top: 0;
+    border-right: 0;
+}
+
+.item-content .price {
+    width: 127px;
+    padding: 14px 0px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 0;
+}
+
+.addCart-btn {
+    font-weight: bold;
+    color: #3F5D45;
+    border: 0;
+    width: 300px;
+    padding: 16px 0px;
+    cursor: pointer;
+}
+
+.page {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.page > li > a{
+    display: block;
+    width: 60px;
+    line-height: 60px;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+    border-right: 0;
+}
+
+.page li:last-child{
+    border-right: 1px solid #EAF0ED;
+}
+
+.page > li > a:hover {
+    background-color: #3F5D45;
+    color: #FFF;
+}
+
